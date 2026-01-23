@@ -1,1 +1,113 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  padding: 1.8em 1.4em;
+}
+
+.header {
+  background-color: hsl(23, 100%, 97%);
+  background-image: url("../tech-book-club-landing-page/starter-code/assets/images/pattern-glow.svg"), url("../tech-book-club-landing-page/starter-code/assets/images/pattern-light-bg.svg");
+  background-position: top 450px left 250px;
+  background-repeat: repeat;
+}
+.header__heading {
+  font-family: "Martian Mono", monospace;
+  font-size: 3.2rem;
+  color: hsl(194, 78%, 11%);
+  background: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.2em;
+}
+.header__logo {
+  margin-bottom: 2em;
+}
+.header__logo img {
+  height: 40px;
+}
+.header__img {
+  width: 100%;
+  border-radius: 10px;
+  padding-bottom: 3em;
+}
+.header__text {
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  color: hsl(195, 23%, 28%);
+  margin-bottom: 1.2em;
+}
+.header__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Martian Mono", monospace;
+  color: hsl(194, 78%, 11%);
+  padding: 1.2em 0.8em;
+  background-color: hsl(22, 100%, 91%);
+  border-radius: 10px;
+  border: 3px solid hsl(194, 78%, 11%);
+  margin-bottom: 1.2em;
+}
+
+.members {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3em;
+}
+.members .avatars {
+  width: 40%;
+}
+.members__notice {
+  padding-left: 1em;
+}
+.members__notice--text {
+  font-family: "Martian Mono", monospace;
+  font-size: 0.8rem;
+}
+
+.main__heading {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 2.2rem;
+  font-family: "Martian Mono", monospace;
+  color: hsl(194, 78%, 11%);
+}
+.main__img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.box__img {
+  padding-right: 1em;
+}
+.box__text {
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+}
+.box__text span {
+  font-weight: bold;
+}
+
+.heading__decoration span {
+  position: relative;
+}
+
+.main__heading--img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 4px;
+  transform: scale(1.4);
+}/*# sourceMappingURL=style.css.map */

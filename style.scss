@@ -47,7 +47,7 @@
 	}
 	&__btn {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		width: 100%;
 		font-size: 1rem;
@@ -59,6 +59,10 @@
 		border-radius: 10px;
 		border: 3px solid $color-neutral-900;
 		margin-bottom: 1.2em;
+		cursor: pointer;
+		img {
+			padding-left: 1em;
+		}
 	}
 }
 .members {
@@ -86,10 +90,15 @@
 		font-family: $font-family-mono;
 		color: $color-neutral-900;
 	}
-	&__img {
+	&__img--1,
+	&__img--2 {
+		position: relative;
 		width: 100%;
 		border-radius: 10px;
+
 	}
+
+
 }
 .box {
 	display: flex;
@@ -101,6 +110,7 @@
 	&__text {
 		font-size: 1.2rem;
 		font-family: $font-family-inter;
+		margin-bottom: 1em;
 		span {
 			font-weight: bold;
 		}
@@ -118,3 +128,182 @@
 	left: 4px;
 	transform: scale(1.4);
 }
+
+.background-image {
+	padding: 1.4em 1.2em;
+	background-image:
+		url(../tech-book-club-landing-page/starter-code/assets/images/pattern-light-bg.svg),
+		url(../tech-book-club-landing-page/starter-code/assets/images/pattern-glow.svg);
+	background-position: bottom -700px left 50px;
+	background-color: $light-salmon50;
+}
+.journey {
+	list-style: none;
+	&__li {
+		display: flex;
+		flex-direction: column;
+		padding: 1em;
+		font-family: $font-family-mono;
+		font-size: 1rem;
+		font-weight: 500;
+	}
+	&__number {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 32px;
+		height: 32px;
+		margin-bottom: 1em;
+		border: 2px solid black;
+		border-radius: 5px;
+	}
+}
+
+.membership {
+	&__box {
+		border: 1px solid $color-neutral-200;
+		font-family: $font-family-mono;
+		padding: 1.2em;
+		margin-bottom: 1.2em;
+		border-radius: 10px;
+		h2 {
+			color: $color-neutral-900;
+			font-weight: 600;
+			margin-bottom: 1em;
+		}
+		hr {
+			margin: 2em 0;
+			border: 1px solid $color-neutral-200;
+		}
+	}
+
+	&__price {
+		display: flex;
+		margin: 2em 0;
+		align-items: center;
+		&--figure {
+			font-size: 2rem;
+			color: $color-neutral-900;
+		}
+		&--month {
+			color: $color-neutral-700;
+		}
+	}
+	&__description {
+		display: flex;
+		align-items: center;
+		margin-bottom: 1em;
+		color: $color-neutral-700;
+	}
+	&__image {
+		margin-right: 1em;
+		color: $color-neutral-700;
+	}
+	&__btn {
+		background-color: $light-salmon50;
+		width: 100%;
+		padding: 1.6em;
+		font-family: $font-family-mono;
+		text-transform: uppercase;
+		color: $color-neutral-900;
+		font-weight: 600;
+		border: 2px solid $color-neutral-900;
+		border-radius: 8px;
+		margin: 1.2em 0;
+		cursor: pointer;
+	}
+}
+.box__decoration {
+	background: url(../tech-book-club-landing-page/starter-code/assets/images/pattern-glow.svg);
+	background-color: $color-neutral-100;
+}
+.stars {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.4em;
+}
+.quote {
+	font-family: $font-family-mono;
+	font-size: 1.2rem;
+	letter-spacing: -0.5px;
+	font-weight: 600;
+	color: $color-neutral-900;
+	margin-bottom: 1em;
+}
+.cite {
+	width: 70%;
+	font-family: $font-family-inter;
+	font-size: 1rem;
+	color: $color-neutral-900;
+	background-color: $color-neutral-200;
+	margin-bottom: 3em;
+}
+
+.footer {
+	hr {
+		width: 100%;
+		height: 0.5px;
+		border: 1px solid $color-neutral-100;
+		margin-top: 3em;
+		margin-bottom: 2em;
+	}
+	width: 100%;
+	background-color: $color-neutral-900;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	overflow: hidden;
+	color: $color-neutral-100;
+	padding: 2em;
+	font-family: $font-family-mono;
+	&__heading {
+		text-align: center;
+		margin-bottom: 1.2em;
+	}
+	&__btn {
+		background-color: $color-neutral-900;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 1.6em;
+		font-family: $font-family-mono;
+		text-transform: uppercase;
+		color: $color-neutral-100;
+		font-weight: 600;
+		border: 2px solid $color-neutral-100;
+		border-radius: 8px;
+		margin: 2em 0;
+		cursor: pointer;
+		img {
+			padding-left: 1em;
+		}
+	}
+	&__members {
+		display: flex;
+		margin-bottom: 3.5em;
+	}
+	&__avatars {
+		align-items: center;
+		width: 40%;
+		height: 100%;
+		padding-right: 1em;
+	}
+	&__notice {
+		font-size: 0.8rem;
+	}
+	&__paragraph {
+		text-align: center;
+		font-size: 0.8rem;
+	}
+	&__social {
+		margin: 1em 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&--image {
+			padding: 0 1em;
+		}
+	}
+}
+@import './medium';
+@import './large';

@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+  .header__img {
+    background-image: url(./tech-book-club-landing-page/starter-code/assets/images/image-hero-tablet.webp);
+  }
+  .main__img--1 {
+    background-image: url(./tech-book-club-landing-page/starter-code/assets/images/image-read-together-tablet.webp);
+  }
+  .main__img--2 {
+    background-image: url(./tech-book-club-landing-page/starter-code/assets/images/image-not-average-tablet.webp);
+  }
+  .main__img--2::after {
+    background-image: url(../tech-book-club-landing-page/starter-code/assets/images/logos-tech.svg);
+    content: "";
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    z-index: 1;
+  }
+}/*# sourceMappingURL=medium.css.map */

@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"large.css"}
+{"version":3,"sources":["../large.scss","large.css"],"names":[],"mappings":"AAAA;EAEE;IACC,aAAA;IACA,uBAAA;IACA,mBAAA;IACA,mBAAA;IACA,SAAA;ECAD;EDCC;IACC,UAAA;ECCF;EDCC;IACC,UAAA;IACA,WAAA;ECCF;EDEA;IACI,wGAAA;ECAJ;EDEE;IACE,UAAA;ECAJ;AACF","file":"large.css"}

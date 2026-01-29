@@ -1,1 +1,22 @@
-/*# sourceMappingURL=large.css.map */
+@media (min-width: 1440px) {
+  .header__desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 130px;
+    gap: 50px;
+  }
+  .header__desktop--left {
+    width: 50%;
+  }
+  .header__desktop--right {
+    width: 50%;
+    height: 50%;
+  }
+  .header__img {
+    background-image: url(.//tech-book-club-landing-page/starter-code/assets/images/image-hero-desktop.webp);
+  }
+  .header__btn {
+    width: 70%;
+  }
+}/*# sourceMappingURL=large.css.map */

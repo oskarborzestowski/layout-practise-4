@@ -37,7 +37,7 @@
 	&__img {
 		width: 100%;
 		border-radius: 10px;
-		padding-bottom: 3em;
+	
 	}
 	&__text {
 		font-size: 1rem;
@@ -90,15 +90,13 @@
 		font-family: $font-family-mono;
 		color: $color-neutral-900;
 	}
-	&__img--1,
-	&__img--2 {
-		position: relative;
+	&__img--1 {
 		width: 100%;
 		border-radius: 10px;
-
+		&--tablet{
+			display: none;
+		}
 	}
-
-
 }
 .box {
 	display: flex;
@@ -140,6 +138,7 @@
 .journey {
 	list-style: none;
 	&__li {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		padding: 1em;

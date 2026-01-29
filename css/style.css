@@ -32,7 +32,6 @@
 .header__img {
   width: 100%;
   border-radius: 10px;
-  padding-bottom: 3em;
 }
 .header__text {
   font-size: 1rem;
@@ -83,10 +82,12 @@
   font-family: "Martian Mono", monospace;
   color: hsl(194, 78%, 11%);
 }
-.main__img--1, .main__img--2 {
-  position: relative;
+.main__img--1 {
   width: 100%;
   border-radius: 10px;
+}
+.main__img--1--tablet {
+  display: none;
 }
 
 .box {
@@ -129,6 +130,7 @@
   list-style: none;
 }
 .journey__li {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 1em;
@@ -297,23 +299,175 @@
 
 @media (min-width: 768px) {
   .header__img {
-    background-image: url(./tech-book-club-landing-page/starter-code/assets/images/image-hero-tablet.webp);
+    background-image: url(../tech-book-club-landing-page/starter-code/assets/images/image-hero-tablet.webp);
   }
-  .main__img--1 {
-    background-image: url(./tech-book-club-landing-page/starter-code/assets/images/image-read-together-tablet.webp);
+  .main__img--1--mobile {
+    display: none;
   }
-  .main__img--2 {
-    background-image: url(./tech-book-club-landing-page/starter-code/assets/images/image-not-average-tablet.webp);
+  .main__img--1--tablet {
+    display: block;
+    position: relative;
   }
-  .main__img--2::after {
-    background-image: url(../tech-book-club-landing-page/starter-code/assets/images/logos-tech.svg);
-    content: "";
-    background-size: contain;
-    width: 120px;
-    height: 120px;
+  .main__img--2--logos {
     position: absolute;
-    bottom: 5px;
-    right: 5px;
-    z-index: 1;
+    bottom: 7%;
+    right: 7%;
   }
+  .membership__boxes {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .membership__box {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: calc(50% - 30px);
+  }
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper {
+    margin: 0 auto;
+    padding: 1.8em 1.8em;
+    max-width: 1440px;
+  }
+  .header {
+    background-image: url("../tech-book-club-landing-page/starter-code/assets/images/pattern-glow.svg");
+    background-position: top 100px right -500px;
+    background-repeat: no-repeat;
+  }
+  .header__desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 130px;
+    gap: 50px;
+  }
+  .header__desktop--left {
+    width: 50%;
+  }
+  .header__desktop--right {
+    width: 50%;
+    height: 50%;
+  }
+  .header__img {
+    background-image: url(.//tech-book-club-landing-page/starter-code/assets/images/image-hero-desktop.webp);
+  }
+  .header__btn {
+    width: 70%;
+    background-color: hsl(23, 100%, 97%);
+  }
+  .header .avatars {
+    width: 25%;
+  }
+  .box__desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin: 60px 0;
+  }
+  .box__desktop--reverse .box__desktop--left {
+    order: 2;
+  }
+  .box__desktop--left {
+    width: 50%;
+  }
+  .box__desktop--left .main__heading {
+    font-size: 3.2rem;
+  }
+  .box__desktop--right {
+    width: 30%;
+  }
+  .box__desktop--right .main__heading {
+    font-size: 3.2rem;
+  }
+  .background-image {
+    padding: 3.4em 1.2em;
+  }
+  .background-image .main__heading {
+    padding: 40px 0;
+    margin: 10px auto;
+    width: 40%;
+    text-align: center;
+    font-size: 3.2rem;
+  }
+  .journey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .journey__li {
+    padding: 50px;
+  }
+  .journey__li::before {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 80px;
+    height: 30px;
+    content: "";
+    background-image: url("../tech-book-club-landing-page/starter-code/assets/images/pattern-arrow.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+  }
+  .journey__text {
+    font-size: 1.2rem;
+  }
+  .membership__boxes {
+    padding: 0 50%;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .membership__box {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+  }
+  .main__heading--center {
+    text-align: center;
+  }
+}
+.quote__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  flex-wrap: nowrap;
+}
+.quote__box .cite {
+  font-family: "Inter", sans-serif;
+  background: none;
+  text-align: center;
+  color: hsl(195, 23%, 28%);
+  font-size: 1.2rem;
+}
+.quote__box .quote {
+  padding: 0 20%;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.footer__top {
+  padding: 40px 30%;
+}
+.footer__bottom, .footer hr {
+  padding: 0 10%;
+}
+.footer__heading {
+  font-size: 3.2rem;
+}
+.footer__avatars {
+  width: 25%;
+}
+.footer__btn {
+  margin-bottom: 70px;
 }/*# sourceMappingURL=style.css.map */

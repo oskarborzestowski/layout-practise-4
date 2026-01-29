@@ -1,25 +1,36 @@
 @media (min-width: 768px) {
+	.header__img {
+		background-image: url(../tech-book-club-landing-page/starter-code/assets/images/image-hero-tablet.webp);
+	}
 
-  .header__img{
-    background-image: url(./tech-book-club-landing-page/starter-code/assets/images/image-hero-tablet.webp);
-  }
-.main__img--1{
-  background-image: url(./tech-book-club-landing-page/starter-code/assets/images/image-read-together-tablet.webp);
-
-}
-.main__img--2{
-  background-image: url(./tech-book-club-landing-page/starter-code/assets/images/image-not-average-tablet.webp);
-
-}
-.main__img--2::after{
-  background-image: url(../tech-book-club-landing-page/starter-code/assets/images/logos-tech.svg);
-  content: "";
-  background-size: contain;
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-  z-index: 1;
-}
+	.main__img--1--mobile {
+		display: none;
+	}
+	.main__img--1--tablet {
+		display: block;
+		position: relative;
+	}
+	.main__img--2--logos {
+		position: absolute;
+		bottom: 7%;
+		right: 7%;
+	}
+	.membership {
+		&__boxes {
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			gap: 30px;
+		}
+		&__box {
+			flex-grow: 1;
+			flex-shrink: 0;
+			flex-basis: calc(50% - 30px);
+		}
+	}
+	.footer__bottom{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 }

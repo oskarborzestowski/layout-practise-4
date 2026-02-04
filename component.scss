@@ -1,8 +1,9 @@
+@use './color.scss' as *;
+
 button {
 	position: relative;
-	// overflow: hidden;
+	overflow: hidden;
 }
-
 
 .btn-animation--hover::before {
 	position: absolute;
@@ -29,15 +30,13 @@ button {
 		left: 120%;
 	}
 }
-.btn-animation--active{
-	transition: color 0.3s;
+.btn-animation--active {
+	transition: color 0.2s;
 }
-.btn-animation--active:active{
-	color: $color-neutral-900;
+.btn-animation--active:active {
+	color: $light-salmon500;
 }
-.btn-animation--active--two:active{
-	color: $light-salmon50;
-}
+
 // .btn-animation--active::after{
 //   position: absolute;
 //   content: '';

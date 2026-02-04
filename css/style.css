@@ -12,7 +12,7 @@ button {
   left: -20%;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: hsl(0, 0%, 100%);
   opacity: 0.8;
   z-index: 1;
   transform: translate(-50%, -50%) rotate(210deg);
@@ -30,6 +30,14 @@ button {
     left: 120%;
   }
 }
+.btn-animation--active {
+  transition: color 0.2s;
+}
+
+.btn-animation--active:active {
+  color: hsl(22, 99%, 72%);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

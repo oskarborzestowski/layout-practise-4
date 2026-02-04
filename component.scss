@@ -1,0 +1,56 @@
+button {
+	position: relative;
+	// overflow: hidden;
+}
+
+
+.btn-animation--hover::before {
+	position: absolute;
+	content: '';
+	width: 30%;
+	height: 600%;
+	top: 25%;
+	left: -20%;
+	right: 0;
+	bottom: 0;
+	background-color: $color-neutral-0;
+	opacity: 0.8;
+	z-index: 1;
+	transform: translate(-50%, -50%) rotate(210deg);
+}
+.btn-animation--hover:hover::before {
+	animation: btn-hover 0.4s ease-in-out;
+}
+@keyframes btn-hover {
+	from {
+		left: -20%;
+	}
+	to {
+		left: 120%;
+	}
+}
+.btn-animation--active{
+	transition: color 0.3s;
+}
+.btn-animation--active:active{
+	color: $color-neutral-900;
+}
+.btn-animation--active--two:active{
+	color: $light-salmon50;
+}
+// .btn-animation--active::after{
+//   position: absolute;
+//   content: '';
+//   width: 100%;
+//   height: 100%;
+//   top: -2px;
+//   left: -2px;
+//   right: 0;
+//   bottom: 0;
+//   border: 2px solid black;
+//   background-color: red;
+//   transition: transform 0.3s;
+// }
+// .btn-animation--active:active::after{
+//   transform: scale(2.2);
+// }
